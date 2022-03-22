@@ -74,6 +74,9 @@ class Main {
                     throw new Exception("Операции с римскими числами не могут быть меньше 1");
                 } else {
                     result = first - second;
+                    if (result == 0)
+                        throw new Exception("Значения 0 нет в римской системе исчеслений");
+
                     break;
                 }
             case "*":
